@@ -12,7 +12,7 @@ switch ($aksi) {
      
      <h2>Daftar mahasiswa</h2>
 
-<a href="index.-hp?p=mhs&aksi=tambah" class="btn btn-primary mb-3">Tambah Mahasiswa</a>
+<a href="index.php?p=mhs&aksi=tambah" class="btn btn-primary mb-3">Tambah Mahasiswa</a>
 
 <table class="table table-bordered table-hover">
 <tr class="table-danger">

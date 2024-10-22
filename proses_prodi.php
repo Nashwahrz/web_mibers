@@ -29,7 +29,8 @@ if ($_GET['proses'] == 'update'){
         $simpan =mysqli_query($db, "Update  prodi 
                 set  nama_prodi='$_POST[nama_prodi]', 
                 jenjang_studi='$_POST[jenjang_studi]'
-                 WHERE id='$_GET[id_edt]'
+                 WHERE id='$_POST[id_edit]'
+                 
                 "    
               );
       

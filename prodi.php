@@ -10,8 +10,8 @@ switch ($aksi) {
 
 
 <a href="index.php?p=prodi&aksi=tambah" class="btn btn-primary mb-3">Tambah Prodi</a>
-<table class="table table-bordered">
-   <tr>
+<table class="table table-bordered table-hover">
+   <tr class="table-danger">
     <th>No</th>
     <th>id prodi</th>
     <th>Nama Prodi</th>
@@ -37,7 +37,7 @@ switch ($aksi) {
         <td>
             <a href="index.php?p=prodi&aksi=edit&id_edt=<?=$data['id']?>" 
             class="btn btn-warning"> Edit</a>
-            <a href="delete_prodi.php?proses=delete&id_hapus=<?= $data['id']?>"
+            <a href="proses_prodi.php?proses=delete&id_hapus=<?= $data['id']?>"
             class="btn btn-danger"onclick="return confirm('yakin akan menghapus data?')">Delete</a>
 
         </td>
@@ -103,6 +103,7 @@ switch ($aksi) {
     <!-- Nama -->
   <div class="mb-3">
     <label for="nama" class="form-label mt-3">NAMA</label>
+    <input type="hidden" name="id_edit" class="form-control" value="<?=$data_prodi['id']?>">
     <input type="text" class="form-control" id="nama" name="nama_prodi" required
     value="<?= $data_prodi['nama_prodi']?>" >
   </div>
